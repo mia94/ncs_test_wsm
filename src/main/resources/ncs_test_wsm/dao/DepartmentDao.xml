@@ -13,4 +13,35 @@
 		FROM department;
 	</select>
 	
+	<insert id="insertDepatment" parameterType="Department">
+		insert into Depatment values(#{deptno},#{deptname},#{floor});
+	</insert>
+	
+	<update id="updateDepartment" parameterType="Department">
+		update Department
+		set deptname=#{deptname}, floor=#{floor}
+		where deptno=#{deptno};
+	</update>
+	
+	<delete id="deleteDepartment" parameterType="Department">
+		delete
+		from Department
+		where deptno=#{deptno};
+	</delete>
+	
 </mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

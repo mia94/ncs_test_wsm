@@ -6,10 +6,10 @@ import ncs_test_wsm.dto.Department;
 
 public interface DepartmentDao {
 	
-	Department selectDepartmentByNo();
+	Department selectDepartmentByNo(Department department);
 	List<Department> selectDepartmentByAll();
 	
-	int insertDepartment();
-	int updateDepartment();
-	int deleteDepartment();
+	int insertDepartment(Department department);
+	int updateDepartment(Department department);
+	int deleteDepartment(Department department);
 }
