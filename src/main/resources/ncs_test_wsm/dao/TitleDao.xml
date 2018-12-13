@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ncs_test_wsm.dao.TitleDao">
+
+	<select id="selectTitleByNo" parameterType="Title" resultType="Title">
+		select no,name
+		from title
+		where no=#{no}
+	</select>
+	
+	<select id="selectTitleByAll" resultType="Title">
+		select no,name
+		from title
+	</select>
+	
+	<insert id="insertTitle" parameterType="Title">
+		insert into Title values(#{no},#{name});
+	</insert>
+	
+	<update id="updateTitle" parameterType="Title">
+		update Title
+		set name=#{name}
+		where no=#{no};
+	</update>
+	
+	<delete id="deleteTitle" parameterType="Title">
+		delete
+		from Title
+		where no=#{no};
+	</delete>
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

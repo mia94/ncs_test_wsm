@@ -5,12 +5,15 @@ import static org.junit.Assert.*;
 import java.util.List;
 
 import org.junit.Assert;
+import org.junit.FixMethodOrder;
 import org.junit.Test;
+import org.junit.runners.MethodSorters;
 
 import ncs_test_wsm.dao.DepartmentDao;
 import ncs_test_wsm.dao.DepartmentDaoImpl;
 import ncs_test_wsm.dto.Department;
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class DepartmentDaoTest extends AbstractTest {
 	private DepartmentDao dao = DepartmentDaoImpl.getInstance();
 	

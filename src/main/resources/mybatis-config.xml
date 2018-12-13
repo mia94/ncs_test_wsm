@@ -5,7 +5,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 <configuration>
 	<properties resource="application.properties"/>
 	<typeAliases>
-		<package name="ncs_test_wsm.dto"/>
+		<!-- <package name="ncs_test_wsm.dto"/> -->
 		<!-- <typeAlias type="kr.or.yi.mybatis_c3p0_wsm.dto.Title" alias="Title"/>
 		<typeAlias type="kr.or.yi.mybatis_c3p0_wsm.dto.Department" alias="Department"/>
 		<typeAlias type="kr.or.yi.mybatis_c3p0_wsm.dto.Title" alias="Title"/> -->
