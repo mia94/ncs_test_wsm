@@ -2,7 +2,7 @@ package ncs_test_wsm.dto;
 
 public class Title {
 	private int no;
-	private String titleName;
+	private String name;
 	
 	public int getNo() {
 		return no;
@@ -10,16 +10,16 @@ public class Title {
 	public void setNo(int no) {
 		this.no = no;
 	}
-	public String getTitleName() {
-		return titleName;
+	public String getName() {
+		return name;
 	}
-	public void setTitleName(String titleName) {
-		this.titleName = titleName;
+	public void setName(String titleName) {
+		this.name = titleName;
 	}
 	
 	@Override
 	public String toString() {
-		return String.format("Title [%s, %s]", no, titleName);
+		return String.format("Title [%s, %s]", no, name);
 	}
 	
 	
